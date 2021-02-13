@@ -1,5 +1,16 @@
+
 <div class="alert alert-primary" role="alert">
   Hi Khouloud!!!
-  <i class="fa fa-smile-o" aria-hidden="true"></i>
-</div>
+  <i class="fa fa-smile-o" aria-hidden="true"></i><br>
+  <p [hidden]= "isHidden">
+    {{msg}}
+    {{monmsg}}
+  </p>
+  <p>Hello je suis APP
+  </p>
+  <button (click)="Hideen()">Afficher/cacher</button>
+  <button (click)="SayHello()">Submit</button>
+  <app-first></app-first>
 
+</div>
+<app-second></app-second>

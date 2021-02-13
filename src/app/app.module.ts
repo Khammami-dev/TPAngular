@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
 
-@NgModule({
+@NgModule({ // pour dire que cette classe un module angular
+// contient enssemble des composants qu'on va utiliser dans ce module là
+// dans ce cas on a seulement le composant AppComponent
   declarations: [
-    AppComponent
+    AppComponent,
+    FirstComponent,
+    SecondComponent
   ],
   imports: [
     BrowserModule,
