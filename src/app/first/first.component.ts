@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class FirstComponent implements OnInit {
 
   constructor() { }
+  two = 'init value';
+
 
   ngOnInit(): void {
   }
+
 
 }

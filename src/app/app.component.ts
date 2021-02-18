@@ -10,6 +10,8 @@ export class AppComponent {
   msg ='Bonjour je suis khouloud';
   msg2='je suis étudiante en 2 ING';
   isHidden = true;
+
+
   get monmsg(){
     return this.msg2;
   }
@@ -17,10 +19,11 @@ export class AppComponent {
     alert("heloooo khouloud");
   }
   Hideen(){
-    if (this.isHidden == true){
-      this.isHidden = false;
-    }else{
-      this.isHidden= true;
-    }
+
+    this.isHidden = !this.isHidden;
   }
+  recieveDataFromSon(color: string) {
+    alert ("le coulure de mon fils est" +color);
+  }
+
 }

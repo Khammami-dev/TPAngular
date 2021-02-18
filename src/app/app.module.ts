@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
+import { CardComponent } from './card/card.component';
+import {FormsModule} from '@angular/forms';
+import { ColorComponent } from './color/color.component';
 
 @NgModule({ // pour dire que cette classe un module angular
 // contient enssemble des composants qu'on va utiliser dans ce module là
@@ -12,11 +15,14 @@ import { SecondComponent } from './second/second.component';
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent
+    SecondComponent,
+    CardComponent,
+    ColorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
