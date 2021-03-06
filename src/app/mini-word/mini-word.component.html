@@ -1,0 +1,11 @@
+<p [ngStyle]="{
+'color' : 'red',
+'background' : 'yellow',
+'font_size':  size
+}">mini-word</p><br>
+<input type="color" [(ngModel)]="color" )]>
+<input type="number" #SizeInput (change)="changeSize(SizeInput.value)">
+<select>
+  <option>Color</option>
+</select>
+
